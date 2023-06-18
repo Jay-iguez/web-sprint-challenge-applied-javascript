@@ -24,6 +24,11 @@ const Card = (article) => {
   const imgCard = document.createElement("img")
   const spanCardAuthor = document.createElement("span")
   //
+  divCardContainer.classList.add("card")
+  divCardHeadline.classList.add("headline")
+  divCardAuthor.classList.add("author")
+  divCardImageContainer.add("img-container")
+  //
 }
 
 const cardAppender = (selector) => {
