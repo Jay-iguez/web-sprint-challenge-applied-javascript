@@ -19,20 +19,29 @@ const Card = (article) => {
   //
   const divCardContainer = document.createElement("div")
   const divCardHeadline = document.createElement("div")
-  const divCardAuthor = document.createElement("div")
-  const divCardImageContainer = document.createElement("div")
+  const divCardAuthorParent = document.createElement("div")
+  const divCardImageParent = document.createElement("div")
   const imgCard = document.createElement("img")
   const spanCardAuthor = document.createElement("span")
   //
   divCardContainer.classList.add("card")
   divCardHeadline.classList.add("headline")
-  divCardAuthor.classList.add("author")
-  divCardImageContainer.add("img-container")
+  divCardAuthorParent.classList.add("author")
+  divCardImageParent.classList.add("img-container")
   //
   divCardHeadline.textContent = article.headline
   imgCard.src = article.authorPhoto
-  spanCardAuthor.textContent = `By ${article.authorName}`
+  spanCardAuthor.textContent = `By  ${article.authorName}`
   //
+  divCardContainer.append(divCardHeadline, divCardAuthorParent)
+  divCardAuthorParent.append(divCardImageParent, spanCardAuthor)
+  divCardImageParent.append(imgCard)
+  //
+  divCardContainer.addEventListener("click", event => {
+    console.log(article.headline)
+  })
+  //
+  return divCardContainer
 }
 
 const cardAppender = (selector) => {
