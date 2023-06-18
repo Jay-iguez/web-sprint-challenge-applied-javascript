@@ -13,6 +13,11 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
+  const divTabsContainer = document.createElement("div")
+  const divTabs1 = document.createElement("div")
+  const divTabs2 = document.createElement("div")
+  const divTabs3 = document.createElement("div")
+  //
 }
 
 const tabsAppender = (selector) => {
