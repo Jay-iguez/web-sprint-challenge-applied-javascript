@@ -18,6 +18,12 @@ const Tabs = (topics) => {
   const divTabs2 = document.createElement("div")
   const divTabs3 = document.createElement("div")
   //
+  divTabsContainer.classList.add("topics")
+  divTabs1.classList.add("tab")
+  divTabs2.classList.add("tab")
+  divTabs3.classList.add("tab")
+  //
+  
 }
 
 const tabsAppender = (selector) => {
