@@ -11,7 +11,6 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
-
   const divHeader = document.createElement("div")
   const spanHeaderDate = document.createElement("span")
   const headingHeader = document.createElement("h1")
@@ -20,6 +19,10 @@ const Header = (title, date, temp) => {
   divHeader.classList.add("header")
   spanHeaderDate.classList.add("date")
   spanHeaderTemp.classList.add("temp")
+  //
+  spanHeaderDate.textContent = date
+  headingHeader.textContent = title
+  spanHeaderTemp.textContent = temp
   //
   
 }
