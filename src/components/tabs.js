@@ -26,7 +26,6 @@ const Tabs = (topics) => {
     divTab.classList.add("tab")
     divTab.textContent = element
     divTabsContainer.appendChild(divTab)
-    console.log("hey", divTab)
   });
   //
   return divTabsContainer
