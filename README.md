@@ -58,7 +58,12 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 Demonstrate your understanding of this sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 1. What is the DOM?
+The DOM is the Document Object Model. It is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. IE JS code. It represents the document as a tree like structure/format with all elements in the document being represented by a node in the tree. It allows JS to access/manipulate and change the elements in the document at will.
 2. What is an event?
+It is an event/action that happens on a webpage, it can be scrolling your mouse wheel to clicking on something and even to the web page simply loading. JS can be used to access and use these events to do actions and create dynamic/functional webpages for it's users.
 3. What is an event listener?
+An event listener can be placed on a document element to "listen" for a particular specified event on itself or around it. It can then act on the existance of said event, rather than just being aware of it. They can be used in conjuction with events themselves to again create dynamic websites.
 4. Why would we convert a NodeList into an Array?
+NodeLists only really have the .forEach() method available to them. So converting them into an array will allow you to use any other advanced array methods on the given NodeList. Neat!
 5. What is a component?
+A component at it's core is a function, a reusable block of code. You store it into memory so you can run it at a needed/or arbitrary time. They themselves are part of a bigger whole, and many components can make a much larger "program". But alone they should be able to stand alone, essentially modular.
