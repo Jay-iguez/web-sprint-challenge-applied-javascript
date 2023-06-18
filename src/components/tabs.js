@@ -13,17 +13,20 @@ const Tabs = (topics) => {
   //   <div class="tab">technology</div>
   // </div>
   //
+  //
   const divTabsContainer = document.createElement("div")
-  const divTabs1 = document.createElement("div")
-  const divTabs2 = document.createElement("div")
-  const divTabs3 = document.createElement("div")
-  //
   divTabsContainer.classList.add("topics")
-  divTabs1.classList.add("tab")
-  divTabs2.classList.add("tab")
-  divTabs3.classList.add("tab")
   //
-  
+  const dataArray = [...topics]
+  dataArray.forEach(element => {
+    const divTab = document.createElement("div")
+    divTab.classList.add("tab")
+    divTab.textContent = element
+    divTabsContainer.appendChild(divTab)
+    console.log("hey", divTab)
+  });
+  //
+  return divTabsContainer
 }
 
 const tabsAppender = (selector) => {
