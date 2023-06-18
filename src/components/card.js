@@ -29,6 +29,10 @@ const Card = (article) => {
   divCardAuthor.classList.add("author")
   divCardImageContainer.add("img-container")
   //
+  divCardHeadline.textContent = article.headline
+  imgCard.src = article.authorPhoto
+  spanCardAuthor.textContent = `By ${article.authorName}`
+  //
 }
 
 const cardAppender = (selector) => {
