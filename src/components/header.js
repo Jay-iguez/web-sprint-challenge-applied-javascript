@@ -41,6 +41,9 @@ const headerAppender = (selector) => {
   // We are taking care of passing in the correct selector on line 16,
   // so all that you need to do is pass it into the querySelector method
   // for the tests to work!
+  const headerDomSelector = document.querySelector(selector)
+  const newDomElement = Header("Is Food Cancelled?", "Decembruary, 2 2099", "9000°F")
+  return headerDomSelector.appendChild(newDomElement)
 }
 
 export { Header, headerAppender }
